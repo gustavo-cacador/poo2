@@ -49,7 +49,9 @@ IFirebaseClient client;
 Se estiver tudo ok, seu código estará assim:
 
 using System;
+
 using System.Collections.Generic;
+
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
