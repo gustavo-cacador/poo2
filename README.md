@@ -26,7 +26,7 @@ using FireSharp.Response;
 
 Logo após isso, precisamos configurar a conexão com o Firebase, que vai ser dado por:
 
-# public partial class Form1 : Form
+ public partial class Form1 : Form
 {
 
     IFirebaseConfig config = new FirebaseConfig
@@ -35,4 +35,54 @@ Logo após isso, precisamos configurar a conexão com o Firebase, que vai ser da
         BasePath = ""
     };
 
-No nosso projeto do FireBase,
+Precisamos preencher o "AuthSecret" e o "BasePath", para isso, vamos fazer o seguinte: 
+
+Em Realtime Database, vamos em Dados, copiamos o link que está e colamos em "BasePath" no nosso código do Visual Studio
+
+![InkedScreenshot_6_LI](https://github.com/gustavo-cacador/poo2/assets/102495284/2a9304c0-b52c-4a80-9e8c-95c7f9296c9f)
+
+
+E em seguida, criamos uma interface para interagir com o FireBase:
+
+IFirebaseClient client;
+
+Se estiver tudo ok, seu código estará assim:
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+
+namespace Projeto_teste_git
+{
+    public partial class Form1 : Form
+    {
+
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "eL7zyVVol0qh9StxyDU81NSQgr0YoqBGV0TQ7Nhu",
+            BasePath = "https://projetoteste-e624c-default-rtdb.firebaseio.com/"
+        };
+
+        IFirebaseClient client;
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
