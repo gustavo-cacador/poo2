@@ -43,9 +43,11 @@ Em Realtime Database, vamos em Dados, copiamos o link que está e colamos em "Ba
 ![InkedScreenshot_6_LI](https://github.com/gustavo-cacador/poo2/assets/102495284/2a9304c0-b52c-4a80-9e8c-95c7f9296c9f)
 
 
-E em seguida, criamos uma interface para interagir com o FireBase:
+Em seguida, criamos uma interface para interagir com o FireBase:
 
 IFirebaseClient client;
+
+E depois criamos um evento de carregamento do formulário, pra quando nós rodarmos nosso código ele vai retornar se está tudo ok com uma mensagem.
 
 Se estiver tudo ok, seu código estará assim:
 
