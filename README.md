@@ -8,9 +8,9 @@ Em seguida clique em começar e adicione um projeto.
 
 Insira um nome para o projeto e crie o seu projeto.
 
-Com o projeto já criado vamos na aba de Criação (no canto esquerdo da tela) e escolhemos por Realtime Database
+Com o projeto já criado vamos na aba de Criação (no canto esquerdo da tela) e escolhemos por Realtime Database.
 
-Em Realtime Database clicamos em "Criar banco de dados" e para configurarmos nosso banco de dados escolhemos a opção "Estados Unidos (us-central1)", depois escolhemos a opção "Iniciar no modo teste" e pronto, está configurado nosso Banco de Dados e já podemos mexer.
+Em Realtime Database clicamos em "Criar banco de dados", e para configurarmos nosso banco de dados escolhemos a opção "Estados Unidos (us-central1)", depois escolhemos a opção "Iniciar no modo teste" e pronto, está configurado nosso Banco de Dados e já podemos mexer.
 
 Agora no Visual Studio, vamos criar um projeto:
 
